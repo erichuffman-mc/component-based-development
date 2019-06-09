@@ -18,8 +18,8 @@ module.exports = {
   // Lint Sass based on .sass-lint.yml config.
   sass: function() {
     return gulp.src([
-      './src/{layout,_patterns}/**/*.scss',
-      '!./src/_patterns/00-global/**/*'
+      './src/{layout,patterns}/**/*.scss',
+      '!./src/patterns/00-global/**/*'
     ])
       .pipe(sassLint())
       .pipe(sassLint.format());
@@ -28,8 +28,8 @@ module.exports = {
   // Lint JavaScript based on .eslintrc config.
   js: function() {
     return gulp.src([
-      './src/{layout,_patterns}/**/*.js',
-      '!./src/_patterns/**/vendors/*'
+      './src/{layout,patterns}/**/*.js',
+      '!./src/patterns/**/vendors/*'
     ])
       .pipe(eslint())
       .pipe(eslint.format());

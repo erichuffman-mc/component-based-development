@@ -21,8 +21,8 @@ module.exports = {
   // Moves JavaScript.
   js: function() {
     return gulp.src([
-      './src/{layout,_patterns}/**/*.js',
-      '!./src/{layout,_patterns}/**/*.es6.js'
+      './src/{layout,patterns}/**/*.js',
+      '!./src/{layout,patterns}/**/*.es6.js'
     ], { base: './' })
       .pipe(rename(function (path) {
         path.dirname = '';

@@ -158,25 +158,25 @@ gulp.task('watch', function() {
 
   // Watch all my sass files and compile sass if a file changes.
   gulp.watch(
-    './src/{layout,_patterns}/**/*.scss',
+    './src/{layout,patterns}/**/*.scss',
     ['watch:sass']
   );
 
   // Watch all my JS files and compile if a file changes.
   gulp.watch([
-    './src/{layout,_patterns}/**/*.js'
+    './src/{layout,patterns}/**/*.js'
   ], ['lint:js', 'compile:js']);
 
   // Watch all my twig files and rebuild the style guide if a file changes.
   gulp.watch(
-    './src/{layout,_patterns}/**/*.twig',
+    './src/{layout,patterns}/**/*.twig',
     ['watch:styleguide']
   );
 
 });
 
 // Reload the browser if the style guide is updated.
-gulp.task('watch:styleguide', ['styleguide']);
+gulp.task('watch:style-guide', ['style-guide']);
 
 //-----------------------------
 // Default Task

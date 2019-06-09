@@ -1,1 +1,1 @@
-var comments = {"comments":[{"el":"#someimpossibleselector","title":"","comment":"\n"},{"el":"#annotation-css-selector","title":"Annotation title","comment":"Annotation description"}]};
+var comments = { "comments" : [{"el":"header[role=banner]","title":"Masthead","comment":"The main header of the site doesn't take up too much screen real estate in order to keep the focus on the core content. It's using a linear CSS gradient instead of a background image to give greater design flexibility and reduce HTTP requests."}]};

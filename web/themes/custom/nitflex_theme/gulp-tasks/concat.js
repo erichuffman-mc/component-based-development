@@ -36,7 +36,7 @@ module.exports = {
         'dist/css/*.css'
       ], { base: './' }))
       .pipe(concat('all.css'))
-      .pipe(gulp.dest('./dist/all'))
+      .pipe(gulp.dest('./dist/style-guide/css'))
       .pipe(sync.stream());
   }
 };
